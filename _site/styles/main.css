@@ -1,0 +1,119 @@
+:root {
+  --unm-cherry: #ba0c2f;
+  --unm-turquoise: #007a86;
+  --unm-silver: #F5F5F5;
+  --unm-lobogray: #63666a;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto; /* take all available vertical space */
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+body {
+  background-color: var(--unm-silver);
+  color: var(--unm-lobogray);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, .btn-primary {
+  background-color: var(--unm-turquoise);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--unm-highnoon);
+}
+
+.bg-lobo{
+    background-color: #ba0c2f !important;
+    border-color: #8a0923;
+}
+
+/* Light navbar text for contrast */
+.bg-lobo .navbar-nav .nav-link,
+.bg-lobo .navbar-brand {
+  color: #f8f9fa !important;
+}
+
+.bg-lobo .navbar-nav .nav-link:hover,
+.bg-lobo .navbar-nav .nav-link.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.bg-lobo .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-lobo .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.bg-hero-gray {
+  background-color: #e9ecef;
+}
+
+.btn-lobo{
+  background-color: var(--unm-cherry);
+  border-color: #8a0923;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.btn-lobo:hover {
+  background-color: #a00c2f;
+  color: #fff;
+}
+.btn-outline-lobo{
+  background-color: transparent;
+  color: var(--unm-cherry);
+  border: 1px solid var(--unm-cherry);
+  border-radius: 0.25rem;
+  border-color: #8a0923;
+}
+
+.btn-outline-lobo:hover {
+  background-color: var(--unm-cherry);
+  color: #fff;
+  border-color: #8a0923;
+}
+.url-lobo{
+  color: var(--unm-cherry);
+  text-decoration: none;
+}
+.url-lobo:hover {
+  text-decoration: underline;
+}
+
+.card img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}

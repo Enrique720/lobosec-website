@@ -1,0 +1,32 @@
+---
+layout: layout.html
+title: LoboSec News
+---
+
+<section class="pb-5">
+  <div class="container">
+    <h1 class="text-center mb-3">LoboSec News</h1>
+    <p class="text-center text-muted mb-5">Our stories, team wins, and cybersecurity adventures at UNM.</p>
+
+    <div class="d-flex flex-column align-items-center gap-4">
+      {% for post in collections.news | reverse %}
+      <div class="card shadow-sm" style="width: 100%; max-width: 700px;">
+        {% if post.data.image %}
+        <img src="{{ post.data.image }}" class="card-img-top" alt="{{ post.data.title }}">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ post.url }}" class="url-lobo">{{ post.data.title }}</a>
+          </h5>
+          <p class="text-muted small mb-3">
+            Published {{ post.date | readableDate }}
+          </p>
+          <div class="d-flex justify-content-end">
+            <a href="{{ post.url }}" class="btn btn-outline-lobo btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

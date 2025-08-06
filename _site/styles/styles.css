@@ -1,0 +1,25 @@
+/* Red theme for LoboSec */
+.bg-lobo {
+  background-color: #ba0c2f !important;
+  border-color: #8a0923 !important;
+}
+
+/* Light navbar text for contrast */
+.bg-lobo .navbar-nav .nav-link,
+.bg-lobo .navbar-brand {
+  color: #f8f9fa !important;
+}
+
+.bg-lobo .navbar-nav .nav-link:hover,
+.bg-lobo .navbar-nav .nav-link.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.bg-lobo .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-lobo .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
