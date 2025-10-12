@@ -117,3 +117,70 @@ header, nav, .btn-primary {
   object-fit: cover;
   height: 200px;
 }
+
+/* Responsive site logo used in navbar and other places */
+.site-logo {
+  display: inline-block;
+  height: 40px; /* default height matching previous design */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Prevent brand from wrapping to multiple lines */
+.navbar-brand {
+  white-space: nowrap;
+}
+
+/* Slightly smaller logo on very small screens to avoid overflow */
+@media (max-width: 420px) {
+  .site-logo {
+    height: 32px;
+  }
+}
+
+
+/* Default widths */
+.w-25 { width: 25% !important; }
+.w-50 { width: 50% !important; }
+.w-75 { width: 75% !important; }
+.w-100 { width: 100% !important; }
+
+/* Small devices (≥576px) */
+@media (min-width: 300px) {
+  .w-sm-25 { width: 25% !important; }
+  .w-sm-50 { width: 50% !important; }
+  .w-sm-75 { width: 75% !important; }
+  .w-sm-100 { width: 100% !important; }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .w-md-25 { width: 25% !important; }
+  .w-md-50 { width: 50% !important; }
+  .w-md-75 { width: 75% !important; }
+  .w-md-100 { width: 100% !important; }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .w-lg-25 { width: 25% !important; }
+  .w-lg-50 { width: 50% !important; }
+  .w-lg-75 { width: 75% !important; }
+  .w-lg-100 { width: 100% !important; }
+}
+
+/* Extra Large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .w-xl-25 { width: 25% !important; }
+  .w-xl-50 { width: 50% !important; }
+  .w-xl-75 { width: 75% !important; }
+  .w-xl-100 { width: 100% !important; }
+}
+
+/* Extra Extra Large devices (≥1400px) */
+@media (min-width: 1400px) {
+  .w-xxl-25 { width: 25% !important; }
+  .w-xxl-50 { width: 50% !important; }
+  .w-xxl-75 { width: 75% !important; }
+  .w-xxl-100 { width: 100% !important; }
+}
